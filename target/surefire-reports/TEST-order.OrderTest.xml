@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="order.OrderTest" time="19.309" tests="5" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/anamur/Downloads/api/target/test-classes:/Users/anamur/Downloads/api/target/classes:/Users/anamur/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/anamur/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/anamur/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/anamur/.m2/repository/io/rest-assured/rest-assured/5.1.1/rest-assured-5.1.1.jar:/Users/anamur/.m2/repository/org/apache/groovy/groovy/4.0.1/groovy-4.0.1.jar:/Users/anamur/.m2/repository/org/apache/groovy/groovy-xml/4.0.1/groovy-xml-4.0.1.jar:/Users/anamur/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/anamur/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/anamur/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/anamur/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/anamur/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/anamur/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/anamur/.m2/repository/io/rest-assured/json-path/5.1.1/json-path-5.1.1.jar:/Users/anamur/.m2/repository/org/apache/groovy/groovy-json/4.0.1/groovy-json-4.0.1.jar:/Users/anamur/.m2/repository/io/rest-assured/rest-assured-common/5.1.1/rest-assured-common-5.1.1.jar:/Users/anamur/.m2/repository/io/rest-assured/xml-path/5.1.1/xml-path-5.1.1.jar:/Users/anamur/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.4/jackson-databind-2.13.4.jar:/Users/anamur/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.4/jackson-annotations-2.13.4.jar:/Users/anamur/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.4/jackson-core-2.13.4.jar:/Users/anamur/.m2/repository/io/qameta/allure/allure-junit4/2.21.0/allure-junit4-2.21.0.jar:/Users/anamur/.m2/repository/io/qameta/allure/allure-java-commons/2.21.0/allure-java-commons-2.21.0.jar:/Users/anamur/.m2/repository/io/qameta/allure/allure-model/2.21.0/allure-model-2.21.0.jar:/Users/anamur/.m2/repository/io/qameta/allure/allure-rest-assured/2.21.0/allure-rest-assured-2.21.0.jar:/Users/anamur/.m2/repository/io/qameta/allure/allure-attachments/2.21.0/allure-attachments-2.21.0.jar:/Users/anamur/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/anamur/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/anamur/.m2/repository/org/slf4j/slf4j-simple/2.0.2/slf4j-simple-2.0.2.jar:/Users/anamur/.m2/repository/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.boot.library.path" value="/Users/anamur/Library/Java/JavaVirtualMachines/corretto-11.0.21/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/anamur/Downloads/api/target/surefire/surefirebooter748424198070338531.jar /Users/anamur/Downloads/api/target/surefire 2024-03-05T19-23-32_251-jvmRun1 surefire13289794495728124537tmp surefire_03969595494045752864tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/anamur/Downloads/api/target/test-classes:/Users/anamur/Downloads/api/target/classes:/Users/anamur/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/anamur/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/anamur/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/anamur/.m2/repository/io/rest-assured/rest-assured/5.1.1/rest-assured-5.1.1.jar:/Users/anamur/.m2/repository/org/apache/groovy/groovy/4.0.1/groovy-4.0.1.jar:/Users/anamur/.m2/repository/org/apache/groovy/groovy-xml/4.0.1/groovy-xml-4.0.1.jar:/Users/anamur/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/anamur/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/anamur/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/anamur/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/anamur/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/anamur/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/anamur/.m2/repository/io/rest-assured/json-path/5.1.1/json-path-5.1.1.jar:/Users/anamur/.m2/repository/org/apache/groovy/groovy-json/4.0.1/groovy-json-4.0.1.jar:/Users/anamur/.m2/repository/io/rest-assured/rest-assured-common/5.1.1/rest-assured-common-5.1.1.jar:/Users/anamur/.m2/repository/io/rest-assured/xml-path/5.1.1/xml-path-5.1.1.jar:/Users/anamur/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.4/jackson-databind-2.13.4.jar:/Users/anamur/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.4/jackson-annotations-2.13.4.jar:/Users/anamur/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.4/jackson-core-2.13.4.jar:/Users/anamur/.m2/repository/io/qameta/allure/allure-junit4/2.21.0/allure-junit4-2.21.0.jar:/Users/anamur/.m2/repository/io/qameta/allure/allure-java-commons/2.21.0/allure-java-commons-2.21.0.jar:/Users/anamur/.m2/repository/io/qameta/allure/allure-model/2.21.0/allure-model-2.21.0.jar:/Users/anamur/.m2/repository/io/qameta/allure/allure-rest-assured/2.21.0/allure-rest-assured-2.21.0.jar:/Users/anamur/.m2/repository/io/qameta/allure/allure-attachments/2.21.0/allure-attachments-2.21.0.jar:/Users/anamur/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/anamur/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/anamur/.m2/repository/org/slf4j/slf4j-simple/2.0.2/slf4j-simple-2.0.2.jar:/Users/anamur/.m2/repository/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="/Users/anamur/Downloads/api/target/allure-results"/>
+    <property name="user.home" value="/Users/anamur"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="/Users/anamur/Library/Java/JavaVirtualMachines/corretto-11.0.21/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/anamur/Downloads/api"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/anamur/Downloads/api/target/surefire/surefirebooter748424198070338531.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="11.0.21+9-LTS"/>
+    <property name="user.name" value="anamur"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.4"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.21.9.1"/>
+    <property name="localRepository" value="/Users/anamur/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/s1/rk9mlb1n1bqd1c10ch5zbs100000gn/T/"/>
+    <property name="idea.version" value="2023.2.4"/>
+    <property name="java.version" value="11.0.21"/>
+    <property name="user.dir" value="/Users/anamur/Downloads/api"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/anamur/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.21+9-LTS"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="failCreateOrderWithAuthorizationAndZeroIngredientTestOk" classname="order.OrderTest" time="6.746"/>
+  <testcase name="successfulCreateOrderWithAuthorizationAndTwoIngredientsTestOk" classname="order.OrderTest" time="2.885"/>
+  <testcase name="failCreateOrderWithoutAuthorizationAndZeroIngredientTestOk" classname="order.OrderTest" time="1.273"/>
+  <testcase name="failCreateOrderWithAuthorizationAndIncorrectHashIngredientTestOk" classname="order.OrderTest" time="7.351">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;500&gt; but was &lt;400&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <500> but was <400>.
+
+	at order.OrderTest.failCreateOrderWithAuthorizationAndIncorrectHashIngredientTestOk(OrderTest.java:93)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "SLF0L5cFVQ@example.com",
+    "password": "123456",
+    "name": "TestUser_5AAYwq"
+}
+HTTP/1.1 200 OK
+Date: Tue, 05 Mar 2024 18:24:18 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTc2MzUyOWVkMjgwMDAxYjNjMzk3NyIsImlhdCI6MTcwOTY2MzA1OCwiZXhwIjoxNzA5NjY0MjU4fQ.5DKheLYPRMzmiMKiPDY8b4C_3u1fp2oYIKEFdHU9Qwo
+ETag: W/"178-zHbeSIbUivXVnPN2V7zlTBfCimY"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Pm%2BNU4nyUTYq83EJndJJLJMRJ263WMJUNcWOM2mN5L9rAh0L%2FSpnxMnMWSWY8JIEBcfTnGEYN2uwozp9LO4VpX8gV8wzMkJPPybRbRC8ODLFz2gpsOMpVNBvaH1FiklSQ4%2Bl%2FP2QRie3cd9urx3H67A0odw%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 85fc24629a5360ca-MAD
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "user": {
+        "email": "slf0l5cfvq@example.com",
+        "name": "TestUser_5AAYwq"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTc2MzUyOWVkMjgwMDAxYjNjMzk3NyIsImlhdCI6MTcwOTY2MzA1OCwiZXhwIjoxNzA5NjY0MjU4fQ.5DKheLYPRMzmiMKiPDY8b4C_3u1fp2oYIKEFdHU9Qwo",
+    "refreshToken": "f3bf3816894f6b34b1d606a37ab0ba8fde73d81c064d58ff691aae3048dceb5c293cea14c30e3345"
+}
+Request method:	GET
+Request URI:	https://stellarburgers.nomoreparties.site/api/ingredients
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 05 Mar 2024 18:24:19 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"1745-LHZ7D8kBZWcbCGljCoPXtjB5CeA"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FPLwUtMAEI1G1dSsZnYlUvh%2FjZXaqgGMiUQbZQ%2FC93HcEeJ1Lo60Z0CFONj%2FJyRR9q47mSOYDbjlktEg%2BUvsnrpFdTYttO8bmfKs2HGDRwbLusPMDyGgc7XocSZkjkjNSkU6wV3q9o7Mri9AUs7FM1tWvlw%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 85fc24679bca5e22-MAD
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "data": [
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6d",
+            "name": "Флюоресцентная булка R2-D3",
+            "type": "bun",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/bun-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6f",
+            "name": "Мясо бессмертных моллюсков Protostomia",
+            "type": "main",
+            "proteins": 433,
+            "fat": 244,
+            "carbohydrates": 33,
+            "calories": 420,
+            "price": 1337,
+            "image": "https://code.s3.yandex.net/react/code/meat-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa70",
+            "name": "Говяжий метеорит (отбивная)",
+            "type": "main",
+            "proteins": 800,
+            "fat": 800,
+            "carbohydrates": 300,
+            "calories": 2674,
+            "price": 3000,
+            "image": "https://code.s3.yandex.net/react/code/meat-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa71",
+            "name": "Биокотлета из марсианской Магнолии",
+            "type": "main",
+            "proteins": 420,
+            "fat": 142,
+            "carbohydrates": 242,
+            "calories": 4242,
+            "price": 424,
+            "image": "https://code.s3.yandex.net/react/code/meat-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa72",
+            "name": "Соус Spicy-X",
+            "type": "sauce",
+            "proteins": 30,
+            "fat": 20,
+            "carbohydrates": 40,
+            "calories": 30,
+            "price": 90,
+            "image": "https://code.s3.yandex.net/react/code/sauce-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6e",
+            "name": "Филе Люминесцентного тетраодонтимформа",
+            "type": "main",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/meat-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa73",
+            "name": "Соус фирменный Space Sauce",
+            "type": "sauce",
+            "proteins": 50,
+            "fat": 22,
+            "carbohydrates": 11,
+            "calories": 14,
+            "price": 80,
+            "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa74",
+            "name": "Соус традиционный галактический",
+            "type": "sauce",
+            "proteins": 42,
+            "fat": 24,
+            "carbohydrates": 42,
+            "calories": 99,
+            "price": 15,
+            "image": "https://code.s3.yandex.net/react/code/sauce-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6c",
+            "name": "Краторная булка N-200i",
+            "type": "bun",
+            "proteins": 80,
+            "fat": 24,
+            "carbohydrates": 53,
+            "calories": 420,
+            "price": 1255,
+            "image": "https://code.s3.yandex.net/react/code/bun-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa75",
+            "name": "Соус с шипами Антарианского плоскоходца",
+            "type": "sauce",
+            "proteins": 101,
+            "fat": 99,
+            "carbohydrates": 100,
+            "calories": 100,
+            "price": 88,
+            "image": "https://code.s3.yandex.net/react/code/sauce-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa76",
+            "name": "Хрустящие минеральные кольца",
+            "type": "main",
+            "proteins": 808,
+            "fat": 689,
+            "carbohydrates": 609,
+            "calories": 986,
+            "price": 300,
+            "image": "https://code.s3.yandex.net/react/code/mineral_rings.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/mineral_rings-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/mineral_rings-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa77",
+            "name": "Плоды Фалленианского дерева",
+            "type": "main",
+            "proteins": 20,
+            "fat": 5,
+            "carbohydrates": 55,
+            "calories": 77,
+            "price": 874,
+            "image": "https://code.s3.yandex.net/react/code/sp_1.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sp_1-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sp_1-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa78",
+            "name": "Кристаллы марсианских альфа-сахаридов",
+            "type": "main",
+            "proteins": 234,
+            "fat": 432,
+            "carbohydrates": 111,
+            "calories": 189,
+            "price": 762,
+            "image": "https://code.s3.yandex.net/react/code/core.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa79",
+            "name": "Мини-салат Экзо-Плантаго",
+            "type": "main",
+            "proteins": 1,
+            "fat": 2,
+            "carbohydrates": 3,
+            "calories": 6,
+            "price": 4400,
+            "image": "https://code.s3.yandex.net/react/code/salad.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/salad-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/salad-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa7a",
+            "name": "Сыр с астероидной плесенью",
+            "type": "main",
+            "proteins": 84,
+            "fat": 48,
+            "carbohydrates": 420,
+            "calories": 3377,
+            "price": 4142,
+            "image": "https://code.s3.yandex.net/react/code/cheese.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/cheese-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/cheese-large.png",
+            "__v": 0
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "SLF0L5cFVQ@example.com",
+    "password": "123456",
+    "name": "TestUser_5AAYwq"
+}
+HTTP/1.1 200 OK
+Date: Tue, 05 Mar 2024 18:24:19 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"178-09kJU9xHaXIi++Zmlzap2K4ZTwg"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=CmfaUmwCtcRSj6V%2BO2tvz1L7%2FvJBIB7h%2Bc9ZucfreEZXiByAKieud%2Bp8pV8skTsUnIW1aUu6LcgLIjgiDOo97H32quSFU%2BNAwOZla6tEPl75iEZSkhywf2aeejhVP0DfeXwpiDB5d2j%2Fuf5Pv56SfYVsvYw%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 85fc2468cff41bb9-MAD
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTc2MzUyOWVkMjgwMDAxYjNjMzk3NyIsImlhdCI6MTcwOTY2MzA1OSwiZXhwIjoxNzA5NjY0MjU5fQ.IFUnh4D-xZQI0kNmTD87Lf8p3F_YXPNUlZCsl_zZH6g",
+    "refreshToken": "de8a8b0af51ee5519f9df296148f6cc3f91db3689a8235b050ec98c3430d768bcb73bc6851b771d9",
+    "user": {
+        "email": "slf0l5cfvq@example.com",
+        "name": "TestUser_5AAYwq"
+    }
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTc2MzUyOWVkMjgwMDAxYjNjMzk3NyIsImlhdCI6MTcwOTY2MzA1OSwiZXhwIjoxNzA5NjY0MjU5fQ.IFUnh4D-xZQI0kNmTD87Lf8p3F_YXPNUlZCsl_zZH6g
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "123456789012345678901234"
+    ]
+}
+HTTP/1.1 400 Bad Request
+Date: Tue, 05 Mar 2024 18:24:19 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 68
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"44-iv5yjzJnIFw/3XSnnHvmvdpwQ0Y"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OOgujjB1yRbREI1nVlkDAf4tVS0aoyY6%2FkE1pzIyaQyh%2FbwsfPwE1wCEBbPB7p64BOAGXJpjnhLVEfV0Mnv6tiPGdXvIVmvG0Y1kfom6ADvHYfNue4Mz%2B7d9OkEp%2BNlENV9v9WpunyXuW%2B9QN6Z%2FLao3kKg%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 85fc246b0bcb5cfb-MAD
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": false,
+    "message": "One or more ids provided are incorrect"
+}
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTc2MzUyOWVkMjgwMDAxYjNjMzk3NyIsImlhdCI6MTcwOTY2MzA1OSwiZXhwIjoxNzA5NjY0MjU5fQ.IFUnh4D-xZQI0kNmTD87Lf8p3F_YXPNUlZCsl_zZH6g
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
+Date: Tue, 05 Mar 2024 18:24:20 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LjAJjG9rn1Gm3IHXxCI8t8gfaVIA%2F04kPryL5Y%2FSaWE86XV786miAsnJMK2R%2FIeC%2F6dPm%2FxMkiQr63Ym75gUp9r%2Bfx%2FK4m8QlnznrmObuVU92caLVSMuq%2FZ4eIYt0ifhPNO1KKVIUYIRnk2Af5AGc%2FQ4ieY%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 85fc246c297237df-MAD
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="failCreateOrderWithoutAuthorizationAndTwoIngredientTestOk" classname="order.OrderTest" time="1.047">
+    <failure message="1 expectation failed.&#10;JSON path message doesn&apos;t match.&#10;Expected: Ingredient ids must be provided&#10;  Actual: null&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: Ingredient ids must be provided
+  Actual: null
+
+	at order.OrderTest.failCreateOrderWithoutAuthorizationAndTwoIngredientTestOk(OrderTest.java:71)
+</failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "Vh5Stot3Oj@example.com",
+    "password": "123456",
+    "name": "TestUser_EotF04"
+}
+HTTP/1.1 200 OK
+Date: Tue, 05 Mar 2024 18:24:20 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTc2MzU0OWVkMjgwMDAxYjNjMzk3ZSIsImlhdCI6MTcwOTY2MzA2MCwiZXhwIjoxNzA5NjY0MjYwfQ.ov_CwKVun5V1VFqsH1E56xxy1HWKCOasQNiGewC7ong
+ETag: W/"178-916SYSmx1pIAnkITfKk4ponOZWk"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Z3HN9Iyoe203PAH6CtdoO5gYhYFtcJTWj8HjZD%2BS72XpMc88vKMl896E5%2BEfqcwAVGYeWpyqbirOMMWN9YVe5uUWgNHnECM917eYAcQ5%2B5Loh18Jsw2%2BtlAVC1LB8BVGTefK%2BR6aZM6oGonkwuX9rzOPk9k%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 85fc246e8fff3154-MAD
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "user": {
+        "email": "vh5stot3oj@example.com",
+        "name": "TestUser_EotF04"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTc2MzU0OWVkMjgwMDAxYjNjMzk3ZSIsImlhdCI6MTcwOTY2MzA2MCwiZXhwIjoxNzA5NjY0MjYwfQ.ov_CwKVun5V1VFqsH1E56xxy1HWKCOasQNiGewC7ong",
+    "refreshToken": "31ae4aa9253dc55440bde8396f16d7e3a8a5c460c7282836da73fe11bf817f1bee18ae739a72d04c"
+}
+Request method:	GET
+Request URI:	https://stellarburgers.nomoreparties.site/api/ingredients
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 05 Mar 2024 18:24:20 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"1745-LHZ7D8kBZWcbCGljCoPXtjB5CeA"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ns0OnFp1rrHnssrzZQAhl5xfunYAK4W8oFTkKMqUTHWXJR8Yt5v3dO4CWTsPLFE8ivbZx1vU%2FG3RuUN65B0p%2FlSsuuTBllKKSWwxQbBenn6BgR1RXzrhBAVPDBMKHHvKynB2I8oSThyEPdV5E9WYz1aFixQ%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 85fc24709be86660-MAD
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "data": [
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6d",
+            "name": "Флюоресцентная булка R2-D3",
+            "type": "bun",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/bun-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6f",
+            "name": "Мясо бессмертных моллюсков Protostomia",
+            "type": "main",
+            "proteins": 433,
+            "fat": 244,
+            "carbohydrates": 33,
+            "calories": 420,
+            "price": 1337,
+            "image": "https://code.s3.yandex.net/react/code/meat-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa70",
+            "name": "Говяжий метеорит (отбивная)",
+            "type": "main",
+            "proteins": 800,
+            "fat": 800,
+            "carbohydrates": 300,
+            "calories": 2674,
+            "price": 3000,
+            "image": "https://code.s3.yandex.net/react/code/meat-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa71",
+            "name": "Биокотлета из марсианской Магнолии",
+            "type": "main",
+            "proteins": 420,
+            "fat": 142,
+            "carbohydrates": 242,
+            "calories": 4242,
+            "price": 424,
+            "image": "https://code.s3.yandex.net/react/code/meat-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa72",
+            "name": "Соус Spicy-X",
+            "type": "sauce",
+            "proteins": 30,
+            "fat": 20,
+            "carbohydrates": 40,
+            "calories": 30,
+            "price": 90,
+            "image": "https://code.s3.yandex.net/react/code/sauce-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6e",
+            "name": "Филе Люминесцентного тетраодонтимформа",
+            "type": "main",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/meat-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa73",
+            "name": "Соус фирменный Space Sauce",
+            "type": "sauce",
+            "proteins": 50,
+            "fat": 22,
+            "carbohydrates": 11,
+            "calories": 14,
+            "price": 80,
+            "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa74",
+            "name": "Соус традиционный галактический",
+            "type": "sauce",
+            "proteins": 42,
+            "fat": 24,
+            "carbohydrates": 42,
+            "calories": 99,
+            "price": 15,
+            "image": "https://code.s3.yandex.net/react/code/sauce-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6c",
+            "name": "Краторная булка N-200i",
+            "type": "bun",
+            "proteins": 80,
+            "fat": 24,
+            "carbohydrates": 53,
+            "calories": 420,
+            "price": 1255,
+            "image": "https://code.s3.yandex.net/react/code/bun-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa75",
+            "name": "Соус с шипами Антарианского плоскоходца",
+            "type": "sauce",
+            "proteins": 101,
+            "fat": 99,
+            "carbohydrates": 100,
+            "calories": 100,
+            "price": 88,
+            "image": "https://code.s3.yandex.net/react/code/sauce-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa76",
+            "name": "Хрустящие минеральные кольца",
+            "type": "main",
+            "proteins": 808,
+            "fat": 689,
+            "carbohydrates": 609,
+            "calories": 986,
+            "price": 300,
+            "image": "https://code.s3.yandex.net/react/code/mineral_rings.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/mineral_rings-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/mineral_rings-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa77",
+            "name": "Плоды Фалленианского дерева",
+            "type": "main",
+            "proteins": 20,
+            "fat": 5,
+            "carbohydrates": 55,
+            "calories": 77,
+            "price": 874,
+            "image": "https://code.s3.yandex.net/react/code/sp_1.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sp_1-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sp_1-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa78",
+            "name": "Кристаллы марсианских альфа-сахаридов",
+            "type": "main",
+            "proteins": 234,
+            "fat": 432,
+            "carbohydrates": 111,
+            "calories": 189,
+            "price": 762,
+            "image": "https://code.s3.yandex.net/react/code/core.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa79",
+            "name": "Мини-салат Экзо-Плантаго",
+            "type": "main",
+            "proteins": 1,
+            "fat": 2,
+            "carbohydrates": 3,
+            "calories": 6,
+            "price": 4400,
+            "image": "https://code.s3.yandex.net/react/code/salad.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/salad-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/salad-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa7a",
+            "name": "Сыр с астероидной плесенью",
+            "type": "main",
+            "proteins": 84,
+            "fat": 48,
+            "carbohydrates": 420,
+            "calories": 3377,
+            "price": 4142,
+            "image": "https://code.s3.yandex.net/react/code/cheese.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/cheese-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/cheese-large.png",
+            "__v": 0
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "61c0c5a71d1f82001bdaaa6d",
+        "61c0c5a71d1f82001bdaaa7a"
+    ]
+}
+HTTP/1.1 200 OK
+Date: Tue, 05 Mar 2024 18:24:20 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"72-tOJau9l+E6q8J1jLLqeFmWLbYUw"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=6rOYX6WccaRqKlgrpVJHNvefl7Q5PMR321MNmdAI8We%2BC6ZNZFND9HVx7Q84RsnVcvHv0oQn6d14ynpqWk9xB5mAayE5jaPxwA0XyJyYnsFLbtlW4mPT2erCxfyDSISjfok5oC76%2FzewUe5sU8F4Si3jblI%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 85fc2471ea4f74de-MAD
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "name": "Флюоресцентный астероидный бургер",
+    "order": {
+        "number": 6760
+    }
+}
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTc2MzU0OWVkMjgwMDAxYjNjMzk3ZSIsImlhdCI6MTcwOTY2MzA2MCwiZXhwIjoxNzA5NjY0MjYwfQ.ov_CwKVun5V1VFqsH1E56xxy1HWKCOasQNiGewC7ong
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
+Date: Tue, 05 Mar 2024 18:24:21 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=NYjhCRB8omtDPC%2BbpN5yP%2FW2%2FOPWSX%2FFBA4FQMGCwsJoy5Ndzik%2FeE5O9YJuLiKst3LEKzqsRN8xHhexlgPhnTP3R8yYf%2FwYD4OumimrUnhJeyZkBr6gWdXzlAQjS81aembeeS%2Bse1m6IYJ4MwCMe7QqzIE%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 85fc2472ebb92192-MAD
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+  </testcase>
+</testsuite>
